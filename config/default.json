@@ -1,0 +1,28 @@
+{
+  "field": {
+    "lat": -32.9500,
+    "lon": -60.6600,
+    "radius_m": 2000,
+    "num_cows": 10,
+    "report_interval_min": 1.0,
+    "random_seed": null
+  },
+  "server": {
+    "protocol": "HTTP Webhook",
+    "host": "localhost",
+    "port": 80,
+    "webhook_path": "/tropillatrack/api/lns/uplink",
+    "mqtt_topic": "application/1/device/{devEUI}/event/up",
+    "bearer_token": "",
+    "timeout_s": 5
+  },
+  "lora": {
+    "dev_eui": "54524F5000000001",
+    "app_eui": "54524F5041505000",
+    "app_key": "54524F504150500054524F5041505000",
+    "spreading_factor": "SF7",
+    "bandwidth": "125kHz",
+    "frequency_mhz": 915.2,
+    "fport": 2
+  }
+}
